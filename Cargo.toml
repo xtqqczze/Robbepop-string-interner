@@ -14,13 +14,13 @@ categories = ["data-structures"]
 edition = "2021"
 
 [dependencies]
-hashbrown = { version = "0.15.1", default-features = false, features = ["default-hasher", "raw-entry"] }
+hashbrown = { version = "0.16.0", default-features = false, features = ["default-hasher", "raw-entry"] }
 serde = { version = "1.0", default-features = false, features = ["alloc"], optional = true }
 
 [dev-dependencies]
 serde_json = "1.0"
-criterion = "0.5.1"
-fxhash = "0.2"
+criterion = "0.7.0"
+rustc-hash = "2.1.1"
 
 [[bench]]
 name = "bench"
